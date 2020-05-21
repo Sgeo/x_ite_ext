@@ -2,7 +2,8 @@
 
   "manifest_version": 2,
   "name": "X_ITE",
-  "version": "1.0",
+  "version": "0.1",
+  "version_name": "0.1 alpha"
 
   "description": "View VRML files in X_ITE 4.6.10",
   
