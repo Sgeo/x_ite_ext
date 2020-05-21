@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "X_ITE",
+  "version": "1.0",
+
+  "description": "View VRML files in X_ITE 4.6.10",
+  
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  
+  "web_accessible_resources": [
+      "x_ite/*"
+  ]
+
+}
