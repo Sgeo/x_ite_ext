@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>My Test Extension Options</title></head>
+<body>
+
+<form>
+
+<label>
+  <input type="checkbox" id="spec_color">
+  Spec color (follow the X3D v3 spec that says to ignore diffuseColor when there's an RGB texture. Note that this is an approximation, as this option looks at pixels instead of image headers. Only effective for image textures.)
+</label>
+
+<div id="status"></div>
+<button type="submit">Save</button>
+
+</form>
+
+<script src="browser-polyfill.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

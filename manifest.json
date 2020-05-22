@@ -14,11 +14,18 @@
   "permissions": [
     "<all_urls>",
     "webRequest",
-    "webRequestBlocking"
+    "webRequestBlocking",
+    "storage"
   ],
   
   "web_accessible_resources": [
-      "x_ite/*"
-  ]
+      "x_ite/*",
+      "x_ite_mods/*"
+  ],
+  
+  "options_ui": {
+    "page": "options.htm",
+    "open_in_tab": false
+  }
 
 }
