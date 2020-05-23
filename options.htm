@@ -10,6 +10,21 @@
   Spec color (follow the X3D v3 spec that says to ignore diffuseColor when there's an RGB texture. Note that this is an approximation, as this option looks at pixels instead of image headers. Only effective for image textures.)
 </label>
 
+<br>
+
+<label>
+  <input type="checkbox" id="relax_is">
+  Relaxed <code>IS</code> rules (allow any <code>a IS b</code> statement regardless of validity. May help loading some content, but results may not be predictable).
+</label>
+
+<br>
+
+<label>
+  <input type="checkbox" id="relax_route">
+  Relaxed <code>ROUTE</code> parsing (allow <code>ROUTE</code>s to appear in <code>MFNode</code> values. This will allow some invalid worlds to load).
+
+<br>
+
 <div id="status"></div>
 <button type="submit">Save</button>
 

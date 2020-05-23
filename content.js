@@ -11,7 +11,7 @@ function insertScript(scriptName) {
 
 document.body.innerHTML = "";
 
-browser.storage.sync.get({spec_color: false}).then(function(options) {
+browser.storage.sync.get({spec_color: false, relax_is: false, relax_route: false}).then(function(options) {
     document.body.style.margin = 0;
 
     var x3dcanvas = document.createElement("X3DCanvas");
@@ -29,6 +29,12 @@ browser.storage.sync.get({spec_color: false}).then(function(options) {
     insertScript("x_ite/x_ite.js").then(function() {
         if(options.spec_color) {
             insertScript("x_ite_mods/spec_color.js");
+        }
+        if(options.relax_is) {
+            insertScript("x_ite_mods/relax_is.js");
+        }
+        if(options.relax_route) {
+            insertScript("x_ite_mods/relax_route.js");
         }
         
         x3dcanvas.setAttribute("src", location.href);
