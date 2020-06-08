@@ -1,5 +1,7 @@
 function save_options() {
   var spec_color = document.getElementById('spec_color').checked;
+  var relax_is = document.getElementById('relax_is').checked;
+  var relax_route = document.getElementById('relax_route').checked;
   browser.storage.sync.set({
     spec_color: spec_color,
     relax_is: relax_is,

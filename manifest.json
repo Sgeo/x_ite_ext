@@ -2,13 +2,17 @@
 
   "manifest_version": 2,
   "name": "X_ITE",
-  "version": "0.1",
-  "version_name": "0.1 alpha",
+  "version": "0.2",
+  "version_name": "0.2 alpha",
 
   "description": "View VRML files in X_ITE 4.6.10",
   
   "background": {
     "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  
+  "icons": {
+    "128": "x_ite/assets/images/logo.png"
   },
   
   "permissions": [
