@@ -12,6 +12,8 @@ function insertScript(scriptName) {
 document.body.innerHTML = "";
 
 browser.storage.sync.get({spec_color: false, relax_is: false, relax_route: false}).then(function(options) {
+    document.documentElement.style.height = "100%";
+    document.body.style.height = "100%";
     document.body.style.margin = 0;
 
     var x3dcanvas = document.createElement("X3DCanvas");
